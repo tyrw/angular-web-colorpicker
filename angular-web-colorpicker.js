@@ -60,15 +60,3 @@ angular.module('web.colorpicker').directive('webColorpicker', function() {
     }
   }
 })
-
-var myApp = angular.module('myApp', ['web.colorpicker'])
-
-angular.module('myApp').controller('DemoCtrl', function() {
-  var demo = this
-  demo.dabModel = '#00CCFF'
-  demo.dabHeight = 30
-  demo.dabWidth = 30
-  demo.dabRadius = 50
-  demo.dabVertical = 4
-  demo.dabRotate = 0
-})
