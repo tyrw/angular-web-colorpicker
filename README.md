@@ -31,7 +31,7 @@ Options
 --
 
 input | use | unit
-:----------|:---------
+:----------|:---------|:---------
 `dab-model` | hex color code to be selected | -
 `dab-height` | height of the dabs in the colorpicker | px
 `dab-width` | width of the dabs in the colorpicker | px
