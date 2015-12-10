@@ -14,7 +14,6 @@ angular.module('web.colorpicker').directive('webColorpicker', function() {
       dabHeight: '@',
       dabWidth: '@',
       dabRadius: '@',
-      dabHorizontal: '@',
       dabVertical: '@',
       dabRotate: '@',
       showGrayscale: '@'
@@ -41,7 +40,7 @@ angular.module('web.colorpicker').directive('webColorpicker', function() {
         { offset: 3,    colors: ['#663300', '#996600', '#CC3300', '#993300', '#990000', '#800000', '#993333'] }
       ];
 
-			if (scope.showGrayscale) {
+      if (scope.showGrayscale) {
       	scope.rows.push({ colors: [] })
       	scope.rows.push({ offset: 1.5,  colors: ['#E6E6E6', '#CCCCCC', '#B3B3B3', '#999999', '#808080', '#666666', '#4C4C4C', '#333333', '#191919', '#000000'] })
       }
