@@ -43,7 +43,7 @@ angular.module('web.colorpicker').directive('webColorpicker', function() {
 
 			if (scope.showGrayscale) {
       	scope.rows.push({ colors: [] })
-      	scope.rows.push({ offset: 1.5,  colors: ['#000000', '#191919', '#333333', '#4C4C4C', '#666666', '#808080', '#999999', '#B3B3B3', '#CCCCCC', '#E6E6E6'] })
+      	scope.rows.push({ offset: 1.5,  colors: ['#E6E6E6', '#CCCCCC', '#B3B3B3', '#999999', '#808080', '#666666', '#4C4C4C', '#333333', '#191919', '#000000'] })
       }
 
       var area, i, len, ref;
