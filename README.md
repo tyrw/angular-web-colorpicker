@@ -23,7 +23,8 @@ Usage
   dab-width="{{ myWidth }}"
   dab-radius="{{ myRadius }}"
   dab-rotate="{{ myRotate }}"
-  dab-vertical="{{ myVertical }}">
+  dab-vertical="{{ myVertical }}"
+  show-grayscale="true">
 </div>
 ```
 
@@ -38,3 +39,4 @@ input | use | unit
 `dab-radius` | radius of the dabs in the colorpicker | %
 `dab-rotate` | rotation angle of the dabs in the colorpicker | deg
 `dab-vertical` | vertical compression of the colorpicker | px
+`show-grayscale` | if true, show the grayscale dabs | -

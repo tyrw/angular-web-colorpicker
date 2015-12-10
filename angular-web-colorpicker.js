@@ -16,7 +16,8 @@ angular.module('web.colorpicker').directive('webColorpicker', function() {
       dabRadius: '@',
       dabHorizontal: '@',
       dabVertical: '@',
-      dabRotate: '@'
+      dabRotate: '@',
+      showGrayscale: '@'
     },
     link: function(scope, ele, attrs) {
 
@@ -40,6 +41,11 @@ angular.module('web.colorpicker').directive('webColorpicker', function() {
         { offset: 3,    colors: ['#663300', '#996600', '#CC3300', '#993300', '#990000', '#800000', '#993333'] }
       ];
 
+			if (scope.showGrayscale) {
+      	scope.rows.push({ colors: [] })
+      	scope.rows.push({ offset: 1.5,  colors: ['#000000', '#191919', '#333333', '#4C4C4C', '#666666', '#808080', '#999999', '#B3B3B3', '#CCCCCC', '#E6E6E6'] })
+      }
+
       var area, i, len, ref;
 
       ref = scope.rows
@@ -53,4 +59,16 @@ angular.module('web.colorpicker').directive('webColorpicker', function() {
       }
     }
   }
+})
+
+var myApp = angular.module('myApp', ['web.colorpicker'])
+
+angular.module('myApp').controller('DemoCtrl', function() {
+  var demo = this
+  demo.dabModel = '#00CCFF'
+  demo.dabHeight = 30
+  demo.dabWidth = 30
+  demo.dabRadius = 50
+  demo.dabVertical = 4
+  demo.dabRotate = 0
 })
