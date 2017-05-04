@@ -5,7 +5,7 @@ A simple, configurable web colorpicker directive for AngularJS.<br />
 No dependency on jQuery or additional stylesheets are required.<br />
 Does not support alpha (though it would be easy to add yourself).<br />
 
-<h2><a href="http://jsfiddle.net/twler/hx1Ltkfx/" target="_blank">Demo page</a></h2>
+<h2><a href="http://jsfiddle.net/tyrw/hx1Ltkfx/" target="_blank">Demo page</a></h2>
 
 Installation
 ==
